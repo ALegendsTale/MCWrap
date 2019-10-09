@@ -114,15 +114,16 @@ public class Wrapper {
 		p4.add(b6);
 		p4.add(p5);
 		
-		p5.add(rb1);
+/*		p5.add(rb1);
 		p5.add(rb2);
 		p5.add(rb3);
 		p5.add(rb4);
 		p5.add(rb5);
 		p5.add(rb6);
 		p5.add(rb7);
+*/
 		
-		bg.add(rb1);
+/*		bg.add(rb1);
 		bg.add(rb2);
 		bg.add(rb3);
 		bg.add(rb4);
@@ -130,6 +131,7 @@ public class Wrapper {
 		bg1.add(rb5);
 		bg1.add(rb6);
 		bg1.add(rb7);
+*/
 
 		frame.add(p2, BorderLayout.EAST);
 		frame.add(p1, BorderLayout.WEST);
