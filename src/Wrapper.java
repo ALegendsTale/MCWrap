@@ -34,6 +34,7 @@ public class Wrapper {
 	static JButton b5 = new JButton("Change your player ID");
 	static JButton b6 = new JButton("Start a server");
 	static JButton b7 = new JButton("Help (Opens browser)");
+	static JButton b8 = new JButton("Link to the Developer");
 	static ButtonGroup bg = new ButtonGroup();
 	static ButtonGroup bg1 = new ButtonGroup();
 	static JRadioButton rb1 = new JRadioButton("Normal");
@@ -57,6 +58,7 @@ public class Wrapper {
 	static GridLayout design = new GridLayout(3, 0);
 	static GridLayout design2 = new GridLayout(1, 3);
 	static GridLayout design3 = new GridLayout(4, 0);
+	static GridLayout design4 = new GridLayout(1, 0);
 	static Border border1 = BorderFactory.createLineBorder(Color.red);
 	static Font font1 = new Font("SansSerif", Font.BOLD, 30);
 
@@ -87,7 +89,7 @@ public class Wrapper {
 		p2.setLayout(design);
 		p3.setLayout(design);
 		p4.setLayout(design);
-		p5.setLayout(design3);
+		p5.setLayout(design4); //RB require design 3
 
 		b1.setBackground(Color.green);
 		b2.setBackground(Color.orange);
@@ -113,6 +115,8 @@ public class Wrapper {
 		p4.add(b7);
 		p4.add(b6);
 		p4.add(p5);
+		
+		p5.add(b8);
 		
 /*		p5.add(rb1);
 		p5.add(rb2);
@@ -268,6 +272,17 @@ public class Wrapper {
 				 Desktop dk=Desktop.getDesktop();
 				 try {
 					dk.open(new File(currentdir + "\\resources\\help.html"));
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		});
+		b7.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				 Desktop dk=Desktop.getDesktop();
+				 try {
+					dk.open(new File(currentdir + "\\resources\\developer.html"));
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
