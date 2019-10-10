@@ -14,6 +14,7 @@ import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
@@ -99,6 +100,7 @@ public class Wrapper {
 		tf1.setHorizontalAlignment(JTextField.CENTER);
 		tf2.setHorizontalAlignment(JTextField.CENTER);
 		
+		l1.setHorizontalAlignment(JLabel.CENTER);
 		l2.setHorizontalAlignment(JLabel.CENTER);
 		
 		rb1.setForeground(Color.blue);
@@ -160,6 +162,7 @@ public class Wrapper {
 							currentdir+"\\resources\\MinecraftLaunch.exe");
 				} catch (IOException e) {
 					e.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Failed to start Minecraft");
 				}
 			}
 		});
@@ -175,6 +178,7 @@ public class Wrapper {
 						Desktop.getDesktop().open(dir);
 					} catch (IOException e) {
 						e.printStackTrace();
+						JOptionPane.showMessageDialog(null, "Failed to find folder");
 					}
 				}
 			}
@@ -219,6 +223,7 @@ public class Wrapper {
 		 
 				} catch (IOException e) {
 					e.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Failed to change the player's name");
 				}
 			}
 		});
@@ -253,6 +258,7 @@ public class Wrapper {
 		 
 				} catch (IOException e) {
 					e.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Failed to change the player's ID");
 				}
 			}
 		});
@@ -268,6 +274,7 @@ public class Wrapper {
 						Desktop.getDesktop().open(dir);
 					} catch (IOException e) {
 						e.printStackTrace();
+						JOptionPane.showMessageDialog(null, "Failed to find folder");
 					}
 				}
 			}
@@ -280,10 +287,11 @@ public class Wrapper {
 					dk.open(new File(currentdir + "\\resources\\help.html"));
 				} catch (IOException e) {
 					e.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Failed to open the HTML file");
 				}
 			}
 		});
-		b7.addActionListener(new ActionListener() {
+		b8.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				 Desktop dk=Desktop.getDesktop();
@@ -291,6 +299,7 @@ public class Wrapper {
 					dk.open(new File(currentdir + "\\resources\\developer.html"));
 				} catch (IOException e) {
 					e.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Failed to open the HTML file");
 				}
 			}
 		});
