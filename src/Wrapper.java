@@ -94,6 +94,12 @@ public class Wrapper {
 		b1.setBackground(Color.green);
 		b2.setBackground(Color.orange);
 		b3.setBackground(Color.orange);
+		b6.setBackground(Color.green);
+		
+		tf1.setHorizontalAlignment(JTextField.CENTER);
+		tf2.setHorizontalAlignment(JTextField.CENTER);
+		
+		l2.setHorizontalAlignment(JLabel.CENTER);
 		
 		rb1.setForeground(Color.blue);
 		rb2.setForeground(Color.orange);
@@ -112,11 +118,11 @@ public class Wrapper {
 		p3.add(tf2);
 		p3.add(l2);
 		
-		p4.add(b7);
 		p4.add(b6);
-		p4.add(p5);
+		p4.add(b7);
+		p4.add(b8);
 		
-		p5.add(b8);
+//		p4.add(p5);
 		
 /*		p5.add(rb1);
 		p5.add(rb2);
